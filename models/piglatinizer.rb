@@ -22,7 +22,7 @@ class PigLatinizer
         letters << e
         letters << "ay"
         letters.join
-      elsif !letters.first.scan(/[bcdfghjklmnpqrstvwxyz]/).empty? && !letters[1].scan(/[bcdfghjklmnpqrstvwxyz]/).empty? 
+      elsif !letters.first.scan(/[bcdfghjklmnpqrstvwxyzBCDFGHJKLMNPQRSTVWXYZ]/).empty? && !letters[1].scan(/[bcdfghjklmnpqrstvwxyz]/).empty? 
         c = letters.shift 
         letters << c 
         d = letters.shift 
