@@ -17,7 +17,7 @@ class PigLatinizer
         c = letters.shift 
         letters << c
         d = letters.shift 
-        binding.pry
+        
         letters << d
         letters << "ay"
         letters.join
