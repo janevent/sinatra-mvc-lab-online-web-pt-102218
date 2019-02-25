@@ -17,9 +17,9 @@ class PigLatinizer
         c = letters.shift 
         letters << c
         d = letters.shift 
-        
         letters << d
-        binding.pry
+        e = letters.shift 
+        letters << e
         letters << "ay"
         letters.join
       elsif !letters.first.scan(/[bcdfghjklmnpqrstvwxyz]/).empty? 
