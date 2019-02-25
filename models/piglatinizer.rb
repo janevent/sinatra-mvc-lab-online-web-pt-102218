@@ -12,7 +12,7 @@ class PigLatinizer
     array.map do |word|
       letters = word.split("")
       #binding.pry
-      if !letters.first.scan(/[bcdfghjklmnpqrstvwxyz]/).empty? && !letters[1].scan(/[bcdfghjklmnpqrstvwxyz]/).empty? 
+      if !letters.first.scan(/[bcdfghjklmnpqrstvwxyz]/).empty? && !letters[1].scan(/[bcdfghjklmnpqrstvwxyz]/).empty? && 
         #binding.pry
         c = letters.shift 
         letters << c
